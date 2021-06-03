@@ -30,7 +30,7 @@
 
 .mainNav img {
   width: 173px;
-
+  z-index: 1;
   /* border-color: green;
     border-style: solid;
     border-width: 5px; */
@@ -39,7 +39,7 @@
 .navLinks {
   flex: 1;
   text-align: right;
-
+  z-index: 1;
   /* border-color: cornflowerblue;
     border-style: solid;
     border-width: 5px; */
@@ -176,7 +176,7 @@ textarea {
   resize: none;
   color: #ff1c29;
   box-sizing: border-box;
-
+  z-index: 1;
   /* border-color: cornflowerblue;
     border-style: solid;
     border-width: 5px; */
@@ -232,11 +232,12 @@ footer a {
 .greenCircle::before {
   transform: translate(30%, 40%);
   content: "";
-  background-color: #90ff86;
+  background-color: #6cf75f;
   position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 50%;
+  z-index: -1;
 }
 
 .pinkCircle {
@@ -244,20 +245,20 @@ footer a {
   overflow: hidden;
   width: 30vw;
   height: 30vw;
-  z-index: -1;
   top: 20vh;
   left: 0;
+  z-index: -1;
 }
 
 .pinkCircle::before {
   transform: translate(-20%, 0%);
   content: "";
-  background-color: #fa858c;
+  background-color: #dd3939;
   position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 50%;
-  mix-blend-mode: color;
+  z-index: -1;
 }
 
 .blueCircle {
@@ -265,25 +266,26 @@ footer a {
   overflow: hidden;
   width: 30vw;
   height: 30vw;
-  z-index: -1;
   top: 0;
   right: 8vh;
+  z-index: -1;
 }
 
 .blueCircle::before {
   transform: translate(0%, -63%);
   content: "";
-  background-color: #40e0d0;
+  background-color: #23ac9e;
   position: absolute;
   height: 100%;
   width: 100%;
   border-radius: 50%;
+  z-index: -1;
 }
 
 .toggleButton {
   position: absolute;
   overflow: hidden;
-  z-index: -1;
+  z-index: 0;
   top: 15vh;
   right: 5vw;
 }
